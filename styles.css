@@ -4,41 +4,51 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
+    background-image: url('https://images.unsplash.com/photo-1511024654425-72f2d89820be?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Z29sZGVuJTIwcmV0cmlldmVyfGVufDB8fDB8fHww');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+    width: 100%;
+    padding: 0;
+    margin: 0;
 }
 
-/* Header with Puppy Background */
+/* Full-width Header Section */
 #main-header {
     background-image: url('https://images.unsplash.com/photo-1562176566-73c303ac1617?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Y3V0ZSUyMHB1cHB5fGVufDB8fDB8fHww');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    padding: 60px 20px;
+    padding: 80px 20px;
     text-align: center;
     color: white;
     font-size: 2.5rem;
     font-weight: bold;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    width: 100%; /* Full width of the page */
 }
 
-/* Content Sections with Golden Retriever Background */
-.content-section {
+/* Full-width Content Sections */
+section {
+    padding: 20px;
+    margin: 0;
+    max-width: 100%; /* Full width */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-sizing: border-box;
     background-image: url('https://images.unsplash.com/photo-1511024654425-72f2d89820be?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Z29sZGVuJTIwcmV0cmlldmVyfGVufDB8fDB8fHww');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    padding: 20px;
-    margin: 20px auto;
-    color: white;
-    max-width: 800px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: rgba(255, 255, 255, 0.9); /* White overlay for readability */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding-bottom: 40px;  /* Adjust the padding to fit your design */
 }
 
-/* Section Text Styling */
-h2 {
-    margin-top: 0;
+/* Text Styling */
+h1, h2 {
+    margin: 0;
+    padding: 10px 0;
 }
 
 ul, p {
@@ -47,14 +57,29 @@ ul, p {
     list-style-type: none;
 }
 
-/* Animation */
-.hidden {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 1s, transform 1s;
+/* Section Styling */
+.content-section {
+    width: 100%; /* Ensure section takes full width */
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    margin-bottom: 20px;
 }
 
-.visible {
-    opacity: 1;
-    transform: translateY(0);
+/* Adding Clear Fix for any floated content */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Styling the Text Sections within the Content */
+h2 {
+    font-size: 1.8rem;
+    padding-bottom: 10px;
+    color: white;
+}
+
+p, ul {
+    font-size: 1.1rem;
+    line-height: 1.6;
 }
